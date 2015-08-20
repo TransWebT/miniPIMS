@@ -8,6 +8,9 @@ Template.ListPatients.events({
 /* ListPatients: Helpers */
 /*****************************************************************************/
 Template.ListPatients.helpers({
+    patients: function() {
+        return Patients.find();
+    }
 });
 
 /*****************************************************************************/

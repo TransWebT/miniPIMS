@@ -3,3 +3,41 @@
     <h1>Find me in app/client/templates/patients/list_patients/list_patients</h1>
   </div>
 </template>
+
+<template name="ListPatients">
+    <h1>Patients List</h1>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Pet Name</th>
+            <th>Species</th>
+            <th>Patient Age</th>
+            <th>Owner First Name</th>
+            <th>Owner Last Name</th>
+            <th>Street 1</th>
+            <th>Street 2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zipcode</th>
+            <th>Phone</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each patients}}
+            <tr>
+                <td>{{petName}}</td>
+                <td>{{species}}</td>
+                <td>{{patientAge}}</td>
+                <td>{{ownerFirstname}}</td>
+                <td>{{ownerLastname}}</td>
+                <td>{{street1}}</td>
+                <td>{{street2}}</td>
+                <td>{{city}}</td>
+                <td>{{state}}</td>
+                <td>{{zipcode}}</td>
+                <td>{{phone}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</template>
